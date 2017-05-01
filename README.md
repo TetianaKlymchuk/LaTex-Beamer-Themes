@@ -37,6 +37,7 @@ It is needed to add beamerthemeGelugor.sty and the following command in the prea
 \institute{\url{aa@ua.edu}\\\url{http://www.aaa.edu/}}
 ```
 I also add an additional title page without using automatic title page, but created manually. For this reason I keep all graphics together with file.tex and style.sty.
+
 3. The third example is very nice and spring theme, called **Intridea**:
 ![screenshot_5](https://cloud.githubusercontent.com/assets/28005338/25579169/006cb228-2e7e-11e7-825f-e15f2871a342.png)
 ![screenshot_6](https://cloud.githubusercontent.com/assets/28005338/25579170/021d0258-2e7e-11e7-893b-a58dc3353a3b.png)
@@ -45,8 +46,9 @@ I also have added some logotypes, which are not in the style, but were added man
 For this reason all files together are required for a proper work of a Presentation.
 
 4. The last example is dark theme, called **Kalgan**:
-![screenshot_7](https://cloud.githubusercontent.com/assets/28005338/25579234/b678e6cc-2e7e-11e7-8596-c7d2ae529318.png)
+![screenshot_10](https://cloud.githubusercontent.com/assets/28005338/25580974/662d686e-2e8d-11e7-9d5d-14d1053914bd.png)
 ![screenshot_9](https://cloud.githubusercontent.com/assets/28005338/25580398/54e105ec-2e89-11e7-83b4-738f6d9f34f8.png)
+![screenshot_11](https://cloud.githubusercontent.com/assets/28005338/25580979/69e1c216-2e8d-11e7-8fe8-124f90325aa2.png)
 
 I have no idea who can use those theme for Presentation. Maybe, if one have a lot of white images which are needed to stand out.
 Nevertheless, this theme looks cool and it worth to show it here.

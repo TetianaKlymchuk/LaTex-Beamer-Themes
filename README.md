@@ -46,7 +46,7 @@ For this reason all files together are required for a proper work of a Presentat
 
 4. The last example is dark theme, called **Kalgan**:
 ![screenshot_7](https://cloud.githubusercontent.com/assets/28005338/25579234/b678e6cc-2e7e-11e7-8596-c7d2ae529318.png)
-![screenshot_9](https://cloud.githubusercontent.com/assets/28005338/25580327/d7597eec-2e88-11e7-803e-55aeb9db4b4e.png)
+![screenshot_9](https://cloud.githubusercontent.com/assets/28005338/25580398/54e105ec-2e89-11e7-83b4-738f6d9f34f8.png)
 
 I have no idea who can use those theme for Presentation. Maybe, if one have a lot of white images which are needed to stand out.
 Nevertheless, this theme looks cool and it worth to show it here.

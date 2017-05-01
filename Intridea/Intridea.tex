@@ -1,0 +1,329 @@
+\RequirePackage{etex}
+\RequirePackage{easymat}
+
+
+
+
+\documentclass[usenames,dvipsnames]{beamer}
+
+\usepackage{amsthm,ulsy,amsmath,amssymb,
+MnSymbol,tikz,bbold}
+\usepackage[all]{xy}
+\usepackage[active]{srcltx}
+\sloppy
+ \usetheme{intridea}
+\setbeamertemplate{navigation symbols}{}
+
+
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+
+\renewcommand{\dashrightarrow}
+{\text{\raisebox{0.9mm} {\
+\begin{tikzpicture}[->,thick,xscale=0.56]
+  \draw[dashed] (0,0)--(1,0)
+;
+\end{tikzpicture}}\ }}
+
+\renewcommand{\dashleftarrow}
+{\text{\raisebox{0.9mm} {\
+\begin{tikzpicture}[<-,thick,xscale=0.56]
+  \draw[dashed] (0,0)--(1,0)
+;
+\end{tikzpicture}}\ }}
+
+
+\setcounter{page}{2}
+\usepackage{color}
+
+\definecolor{lavand}{RGB}{51,0,102}
+\mode<presentation>
+
+\begin{document}
+
+
+
+\begin{frame}
+\frametitle{Generalizations of Roth's criteria
+for solvability 
+of matrix equations}
+\includegraphics<1>[height=1.2cm]{upc.png}
+\hspace{8.3cm}
+\includegraphics<1>[height=1.2cm]{knu.jpg}
+\begin{center}
+\bigskip
+
+{\Large\alert{
+Tetiana Klymchuk}}
+
+\medskip
+
+{\large
+{Universitat Polit\`{e}cnica de Catalunya}}\\
+\vspace{1cm}
+
+
+\textcolor{lavand}{\large
+XXV CEDYA / XV CMA}\\
+\medskip
+
+\textcolor{lavand}{June 26--30, 2017}
+
+
+\end{center}
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Semilinear mappings}
+
+A mapping ${\cal A}$ from a complex
+vector space $U$ to a complex vector
+space $V$ is \alert{semilinear} if
+\[
+{\cal A}(u+u')={\cal A}u+{\cal A}u',\qquad
+{\cal A}(\alpha u)=\alert{\bar\alpha} {\cal A}u
+\]
+for all $u,u'\in U$ and $\alpha
+\in\mathbb C$.
+\bigskip
+
+
+
+We write
+\begin{itemize}
+  \item ${\cal A}:
+      U\alert{\longrightarrow} V$
+      if ${\cal A}$ is a
+      \textcolor{blue}{linear
+mapping}, and
+  \item ${\cal A}:
+      U\alert{\dashrightarrow} V$
+      if ${\cal A}$ is a
+      \textcolor{blue}{semilinear
+      mapping}.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Cycles of linear and
+semilinear mappings}
+
+
+We give a canonical form of matrices of
+a \alert{cycle of linear and semilinear
+mappings}
+\[
+\xymatrix{
+{V_1}
+\ar@{-}@/_1.5pc/[rrrr]^{\mathcal A_t}
+\ar@{-}[r]^{\mathcal A_1}&
+V_2\ar@{-}[r]^{\mathcal A_2\ } &
+{\ \dots\ }&{V_{t-1}}
+\ar@{-}[l]_{\mathcal A_{t-2}}
+\ar@{-}[r]^{\ \mathcal A_{t-1}}&{V_t}}
+\]
+in which \textcolor{blue}{each line is}
+\begin{itemize}
+  \item a full arrow
+      \alert{$\longrightarrow$},
+      \alert{$\longleftarrow$}, or
+  \item a dashed arrow
+      \alert{$\dashrightarrow$},
+      \alert{$\dashleftarrow$}.
+\end{itemize}
+
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{My talk is based on:}
+
+\begin{itemize}
+
+  \item \alert{T. Klimchuk,
+  D. Kovalenko, T. Rybalkina,
+  V.V. Sergeichuk}, {\it Tame systems
+  of linear and semilinear mappings}),
+   Contemp. Math. 658 (2016) 103-114.
+\bigskip
+\bigskip
+
+
+  \item \alert{D. Duarte de
+      Oliveira, V. Futorny, T.
+      Klimchuk, D. Kovalenko, V.V.
+      Sergeichuk}, {\it Cycles of
+      linear and semilinear
+      mappings}), Linear Algebra
+      Appl. 438 (2013) 3442-3453.
+\bigskip
+\bigskip
+
+  \item \alert{D. Duarte de
+      Oliveira, R.A. Horn, T.
+      Klimchuk, V.V. Sergeichuk},
+      {\it Remarks on the
+      classification of a pair of
+      commuting semilinear
+      operators}, Linear Algebra
+      Appl. 436 (2012) 3362-3372.
+
+
+
+\end{itemize}
+
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Empty matrices}
+
+\begin{itemize}
+  \item $\forall n=0,1,2,\dots$
+      $\exists !$ matrices of sizes
+      \alert{$0\times n$} and
+      \alert{$n\times 0$},
+
+      which correspond to linear
+  mappings
+  \textcolor{blue}{$\mathbb C^n\to
+  0$} and
+  \textcolor{blue}{$0\to\mathbb
+      C^n$}.
+\medskip
+
+  \item They are denoted by
+      \alert{$0_{0n}$} and
+      \alert{$0_{n0}$} and are
+      considered as zero matrices
+\medskip
+
+  \item For every $p\times q$
+      matrix $M_{pq}$:
+\begin{align*}
+\alert{M_{pq}\oplus 0_{n0}}&=\begin{bmatrix}
+  M_{pq} & 0 \\
+  0 &0_{n0}
+\end{bmatrix}=\begin{bmatrix}
+  M_{pq}& 0_{p0} \\
+  0_{nq}& 0_{n0}
+\end{bmatrix}=\alert{\begin{bmatrix}
+M_{pq} \\ 0_{nq}
+\end{bmatrix}}
+\\[5mm]
+\alert{M_{pq}\oplus 0_{0n}}&=\begin{bmatrix}
+  M_{pq} & 0 \\
+  0 & 0_{0n}
+\end{bmatrix}=\begin{bmatrix}
+  M_{pq}& 0_{pn} \\
+  0_{0q}& 0_{0n}
+\end{bmatrix}=\alert{\begin{bmatrix}
+   M_{pq} & 0_{pn}
+\end{bmatrix}}
+\end{align*}
+
+\end{itemize}
+  \end{frame}
+
+\begin{frame}
+\frametitle{\alert{Soooooo baaad}
+without empty matrices}
+
+ $\forall A$ $\exists$
+      nonsingular $R,S$:
+      $RAS=\begin{bmatrix}
+              I & 0 \\
+              0 & 0 \\
+            \end{bmatrix}$
+
+\textcolor{blue}{Observation}
+\begin{itemize}
+  \item Each matrix is equivalent
+      to a direct sum of
+      indecomposable matrices of
+      the form \[ \alert{[1],\ [1\,
+      0],\ [1\,0\,0],\ \dots,\
+\begin{bmatrix}
+  1 \\0 \\
+\end{bmatrix},\ \begin{bmatrix}
+  1 \\0 \\0
+\end{bmatrix},\ \dots}
+\]
+
+  \item This direct sum \alert{is
+      not uniquely determined}:
+\begin{align*}
+\begin{bmatrix}
+  1&0&0 \\0&0&0\\
+\end{bmatrix}&=\left[\begin{array}{cc|c}
+1&0&0 \\\hline 0&0&0\end{array}\right]=
+\alert{[1\,0]\oplus [0]}
+\\
+&=\left[\begin{array}{c|cc}
+1&0&0 \\\hline 0&0&0\end{array}\right]=
+\alert{[1]\oplus [0\, 0]}
+\end{align*}
+\end{itemize}
+  \end{frame}
+
+\begin{frame}
+\frametitle{ \alert{Gooood}
+with empty
+matrices} \vspace{-1cm}
+\begin{align*}
+\begin{bmatrix}
+  1&0&0 \\0&0&0\\
+\end{bmatrix}&=
+[1\,0]\oplus [0]
+=
+\alert{[1]\oplus 0_{01} \oplus
+0_{01}\oplus 0_{10}}
+\\
+&=
+[1]\oplus [0\, 0]=
+\alert{[1]\oplus 0_{01} \oplus
+0_{01}\oplus 0_{10}}
+\end{align*}
+\bigskip
+
+\textcolor{blue}{\large A la Jordan
+Theorem}
+\begin{itemize}
+  \item \textcolor{blue}{\it Each
+      matrix is equivalent to a
+      direct sum of indecomposable
+      matrices of the form}
+      \alert{$[1]$, $0_{01}$,
+      $0_{10}$}.
+
+  \item \textcolor{blue}{\it This
+      direct sum is}
+      \alert{uniquely
+      determined}\textcolor{blue}{\it,
+      up to permutation of
+      summands.}
+\end{itemize}
+  \end{frame}
+
+
+
+\end{document}
+
+\begin{frame}
+
+\frametitle{The classification of
+semilinear operators}
+
+\end{frame}
